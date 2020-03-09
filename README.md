@@ -1,4 +1,4 @@
-# Description
+## Description
 
 This is the repository for the Suitceyes-Visual Analysis module. In visual analysis or VA, the incoming messages that contain live images from a remote camera are processed and analyzed. The analysis consists of two main areas, which are object detection and classification and face detection and classification. The results from the aforementioned operations can be distributed through a messaging bus that handles the communication between the camera, the VA service and potentially any module that would require those results. These results consist of JSON files that describe the detected objects or human faces, their position and the class that they belong. In order to utilize the aforementioned platform capabilities of the module, a subscription to the said message bus (VA_KBS_channel) is required. Thousands subscriptions can be potentially handled simultaneously.
 
@@ -27,7 +27,7 @@ The Visual analysis module is developed in Python version 3.5. Below the additio
 8. Download and install CUDA in addition to the Python libraries listed in the requirements.txt document.
 9 Start lampp service and run python3 listener.py.
 
-### Platform Capabilities
+## Platform Capabilities
 
 To utilize the module as a platform and obtain the VA results that include the JSON format output, subscribe to the VA_KBS_channel provided by the Realtime Framework. For more information on the Realtime Framework, you can see [here](https://framework.realtime.co/messaging/#documentation). The output of the VA analysis contains basic information about the image (dimensions, timestamp and name), details about the objects that are detected, which are: the type of object with the corresponding confidence and its relative position in the image and the human faces and their positions which are also recognised with the assistance of the Facenet library.
 ## Contact 
