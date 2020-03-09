@@ -1,0 +1,7 @@
+keras == 2.2.4 
+Tensorflow-gpu == 1.12.0
+cv2
+numpy
+requests
+tqdm
+uuid
