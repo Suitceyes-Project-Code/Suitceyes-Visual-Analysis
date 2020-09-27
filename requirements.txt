@@ -1,5 +1,5 @@
 keras==2.2.4 
-Tensorflow-gpu==1.15.2
+Tensorflow-gpu==1.15.4
 cv2
 numpy
 requests
